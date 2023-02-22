@@ -94,7 +94,7 @@ export const migrations = {
   }),
   '>=3.8.4': (before: PersistableValues_3_8_1): PersistableValues_3_8_4 => ({
     ...before,
-    isInternalVideoChatWindowEnabled: !process.mas,
+    isInternalVideoChatWindowEnabled: false,
     isAddNewServersEnabled: false,
   }),
   '>=3.8.7': (before: PersistableValues_3_8_4): PersistableValues_3_8_7 => ({
